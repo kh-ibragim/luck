@@ -46,7 +46,7 @@ class MapScreenVC: BaseViewController, YMKMapObjectTapListener, CLLocationManage
         self.getObjectMap()
       //  self.navigationLeftButton()
     }
-    
+    //--
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if self.filterManager.needRequest {
@@ -56,7 +56,7 @@ class MapScreenVC: BaseViewController, YMKMapObjectTapListener, CLLocationManage
         self.hideNavigation = true
         self.hideNavigationShadow()
     }
-    
+    //--
     func setupObserve(){
         self.yandexMap.mapWindow.map.addCameraListener(with: self)
         
