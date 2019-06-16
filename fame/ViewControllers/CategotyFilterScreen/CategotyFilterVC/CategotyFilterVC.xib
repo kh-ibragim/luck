@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
+        </array>
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategotyFilterVC" customModule="fame" customModuleProvider="target">
+            <connections>
+                <outlet property="busNilButton" destination="wT5-QN-aDt" id="tNF-2Y-zeu"/>
+                <outlet property="busNoButton" destination="h1a-US-mhb" id="tkk-Rn-sT2"/>
+                <outlet property="busYesButton" destination="eT3-1O-K8d" id="bC4-vz-UJl"/>
+                <outlet property="carNilButton" destination="VB6-3L-zFV" id="eAq-wq-v28"/>
+                <outlet property="carNoButton" destination="KFX-gY-xiS" id="XWc-lc-gC5"/>
+                <outlet property="carYesButton" destination="LJw-PZ-4xC" id="pPH-aK-LXV"/>
+                <outlet property="educationNilButton" destination="dFs-IT-fBc" id="dJh-jk-ELN"/>
+                <outlet property="educationNoButton" destination="V6T-s9-2l0" id="6Ga-0B-bel"/>
+                <outlet property="educationYesButton" destination="vzb-Mp-wXV" id="7Nz-LT-Jwl"/>
+                <outlet property="entertainmentNilButton" destination="iRS-rI-WgM" id="3Yv-cn-zYg"/>
+                <outlet property="entertainmentNoButton" destination="PDM-Sw-UKd" id="tJO-EQ-gET"/>
+                <outlet property="entertainmentYesButton" destination="gI5-jf-9RH" id="Rlv-s1-JVn"/>
+                <outlet property="logisticsNilButton" destination="haK-dU-QHs" id="ARO-wX-tqz"/>
+                <outlet property="logisticsNoButton" destination="qKk-75-gyY" id="Ed1-L2-3zM"/>
+                <outlet property="logisticsYesButton" destination="xwV-xE-YPL" id="If2-h7-eQ9"/>
+                <outlet property="medicineNilButton" destination="ap5-hv-Iom" id="LIH-jL-z5H"/>
+                <outlet property="medicineNoButton" destination="iXf-ec-b4p" id="5TC-uD-ead"/>
+                <outlet property="medicineYesButton" destination="0l2-vu-PzG" id="Rqo-aR-zJS"/>
+                <outlet property="nextButton" destination="R5D-TJ-b7s" id="xTd-pg-u84"/>
+                <outlet property="shopNilButton" destination="wtS-5K-fMX" id="SR4-gm-Hoc"/>
+                <outlet property="shopNoButton" destination="lRK-7D-wao" id="hGh-tu-dIK"/>
+                <outlet property="shopYesButton" destination="MZk-1N-dnd" id="p0t-Xi-bpq"/>
+                <outlet property="trafficNilButton" destination="YRj-ad-V1d" id="9Xi-yO-gb3"/>
+                <outlet property="trafficNoButton" destination="eTn-K1-EEy" id="Lie-Z7-2XH"/>
+                <outlet property="trafficYesButton" destination="YK8-UH-ivN" id="Btu-is-PXA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1706"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ui4-p1-Tod">
+                    <rect key="frame" x="0.0" y="20" width="375" height="1686"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t00-fO-6rQ">
+                            <rect key="frame" x="34" y="7" width="306" height="102"/>
+                            <string key="text">Укажите чтобы Вы
+хотели видеть в своем 
+районе</string>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xp8-FA-Wwx">
+                            <rect key="frame" x="0.0" y="153" width="375" height="114"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Развлечения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgT-e3-Jeo">
+                                    <rect key="frame" x="22" y="0.0" width="331" height="25"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кинотеатры, клубы, театры и т. д." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpG-du-ylP">
+                                    <rect key="frame" x="22" y="29" width="331" height="17"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="14"/>
+                                    <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDM-Sw-UKd">
+                                    <rect key="frame" x="22" y="62" width="102.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="AIk-Ib-9Sl"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Не хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="AIk-Ib-9Sl"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI5-jf-9RH">
+                                    <rect key="frame" x="252" y="62" width="101" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="s1B-Qt-5P5"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="s1B-Qt-5P5"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRS-rI-WgM">
+                                    <rect key="frame" x="134.5" y="62" width="107.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="HFS-Tl-cxR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Все равно">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="HFS-Tl-cxR"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="gI5-jf-9RH" secondAttribute="bottom" id="1Qj-Ly-swh"/>
+                                <constraint firstItem="gI5-jf-9RH" firstAttribute="width" secondItem="Xp8-FA-Wwx" secondAttribute="width" multiplier="0.27" id="5Cm-rX-5xa"/>
+                                <constraint firstItem="PDM-Sw-UKd" firstAttribute="leading" secondItem="Xp8-FA-Wwx" secondAttribute="leading" constant="22" id="9ik-wX-SDL"/>
+                                <constraint firstItem="YpG-du-ylP" firstAttribute="leading" secondItem="Xp8-FA-Wwx" secondAttribute="leading" constant="22" id="BSk-GG-jgU"/>
+                                <constraint firstAttribute="trailing" secondItem="qgT-e3-Jeo" secondAttribute="trailing" constant="22" id="DZV-Js-q8C"/>
+                                <constraint firstItem="qgT-e3-Jeo" firstAttribute="top" secondItem="Xp8-FA-Wwx" secondAttribute="top" id="Dh3-sI-AR0"/>
+                                <constraint firstItem="PDM-Sw-UKd" firstAttribute="top" secondItem="YpG-du-ylP" secondAttribute="bottom" constant="16" id="OAe-Tv-1iC"/>
+                                <constraint firstAttribute="bottom" secondItem="PDM-Sw-UKd" secondAttribute="bottom" id="Pc3-TU-vjG"/>
+                                <constraint firstItem="gI5-jf-9RH" firstAttribute="centerY" secondItem="PDM-Sw-UKd" secondAttribute="centerY" id="UZi-9x-djx"/>
+                                <constraint firstAttribute="trailing" secondItem="gI5-jf-9RH" secondAttribute="trailing" constant="22" id="Usk-wT-h0e"/>
+                                <constraint firstItem="YpG-du-ylP" firstAttribute="top" secondItem="qgT-e3-Jeo" secondAttribute="bottom" constant="4" id="WD6-kK-icR"/>
+                                <constraint firstItem="gI5-jf-9RH" firstAttribute="leading" secondItem="iRS-rI-WgM" secondAttribute="trailing" constant="10" id="aF1-P5-yzz"/>
+                                <constraint firstItem="qgT-e3-Jeo" firstAttribute="leading" secondItem="Xp8-FA-Wwx" secondAttribute="leading" constant="22" id="c0M-WD-16G"/>
+                                <constraint firstAttribute="bottom" secondItem="iRS-rI-WgM" secondAttribute="bottom" id="cIv-pH-GGo"/>
+                                <constraint firstAttribute="height" constant="114" id="cca-l5-ePz"/>
+                                <constraint firstItem="iRS-rI-WgM" firstAttribute="top" secondItem="YpG-du-ylP" secondAttribute="bottom" constant="16" id="dUc-z4-U1w"/>
+                                <constraint firstItem="PDM-Sw-UKd" firstAttribute="width" secondItem="Xp8-FA-Wwx" secondAttribute="width" multiplier="0.27" constant="1" id="hde-dz-Duk"/>
+                                <constraint firstItem="gI5-jf-9RH" firstAttribute="top" secondItem="YpG-du-ylP" secondAttribute="bottom" constant="16" id="k8R-u0-HiR"/>
+                                <constraint firstAttribute="trailing" secondItem="YpG-du-ylP" secondAttribute="trailing" constant="22" id="tde-1p-gQK"/>
+                                <constraint firstItem="iRS-rI-WgM" firstAttribute="leading" secondItem="PDM-Sw-UKd" secondAttribute="trailing" constant="10" id="yNR-Ip-gda"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thL-ho-kK5">
+                            <rect key="frame" x="0.0" y="313" width="375" height="114"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Образование" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NoR-eJ-9m5">
+                                    <rect key="frame" x="22" y="0.0" width="331" height="25"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Детсады, школы, университеты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rst-wv-K37">
+                                    <rect key="frame" x="22" y="29" width="331" height="17"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="14"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6T-s9-2l0">
+                                    <rect key="frame" x="22" y="62" width="102.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="gPu-Rd-sX2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Не хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="gPu-Rd-sX2"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzb-Mp-wXV">
+                                    <rect key="frame" x="252" y="62" width="101" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="jPr-lw-pyT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="jPr-lw-pyT"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFs-IT-fBc">
+                                    <rect key="frame" x="134.5" y="62" width="107.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="DJ5-Wt-ffC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Все равно">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="DJ5-Wt-ffC"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="V6T-s9-2l0" firstAttribute="leading" secondItem="thL-ho-kK5" secondAttribute="leading" constant="22" id="2ey-X5-NiP"/>
+                                <constraint firstItem="dFs-IT-fBc" firstAttribute="leading" secondItem="V6T-s9-2l0" secondAttribute="trailing" constant="10" id="HRX-J4-zqj"/>
+                                <constraint firstItem="V6T-s9-2l0" firstAttribute="width" secondItem="thL-ho-kK5" secondAttribute="width" multiplier="0.27" constant="1" id="ID5-oV-osi"/>
+                                <constraint firstItem="NoR-eJ-9m5" firstAttribute="top" secondItem="thL-ho-kK5" secondAttribute="top" id="Ib3-zJ-chF"/>
+                                <constraint firstItem="V6T-s9-2l0" firstAttribute="top" secondItem="Rst-wv-K37" secondAttribute="bottom" constant="16" id="LIB-FK-PtS"/>
+                                <constraint firstAttribute="height" constant="114" id="NpI-UV-GYZ"/>
+                                <constraint firstAttribute="bottom" secondItem="dFs-IT-fBc" secondAttribute="bottom" id="Nss-YH-fIi"/>
+                                <constraint firstItem="vzb-Mp-wXV" firstAttribute="top" secondItem="Rst-wv-K37" secondAttribute="bottom" constant="16" id="Q7h-p8-FcO"/>
+                                <constraint firstAttribute="trailing" secondItem="NoR-eJ-9m5" secondAttribute="trailing" constant="22" id="QRr-iR-c7w"/>
+                                <constraint firstItem="vzb-Mp-wXV" firstAttribute="leading" secondItem="dFs-IT-fBc" secondAttribute="trailing" constant="10" id="Til-OX-Djq"/>
+                                <constraint firstItem="NoR-eJ-9m5" firstAttribute="leading" secondItem="thL-ho-kK5" secondAttribute="leading" constant="22" id="Tti-rn-R9O"/>
+                                <constraint firstItem="vzb-Mp-wXV" firstAttribute="width" secondItem="thL-ho-kK5" secondAttribute="width" multiplier="0.27" id="XA5-H2-IKe"/>
+                                <constraint firstItem="dFs-IT-fBc" firstAttribute="top" secondItem="Rst-wv-K37" secondAttribute="bottom" constant="16" id="XHh-bC-4lI"/>
+                                <constraint firstAttribute="bottom" secondItem="V6T-s9-2l0" secondAttribute="bottom" id="Zs0-gy-XBT"/>
+                                <constraint firstItem="vzb-Mp-wXV" firstAttribute="centerY" secondItem="V6T-s9-2l0" secondAttribute="centerY" id="akQ-0y-sba"/>
+                                <constraint firstItem="Rst-wv-K37" firstAttribute="leading" secondItem="thL-ho-kK5" secondAttribute="leading" constant="22" id="cdu-zz-Paw"/>
+                                <constraint firstItem="Rst-wv-K37" firstAttribute="top" secondItem="NoR-eJ-9m5" secondAttribute="bottom" constant="4" id="nRo-UF-084"/>
+                                <constraint firstAttribute="bottom" secondItem="vzb-Mp-wXV" secondAttribute="bottom" id="nc5-aU-S7C"/>
+                                <constraint firstAttribute="trailing" secondItem="Rst-wv-K37" secondAttribute="trailing" constant="22" id="rKt-Jq-bsz"/>
+                                <constraint firstAttribute="trailing" secondItem="vzb-Mp-wXV" secondAttribute="trailing" constant="22" id="u4V-sF-e1y"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4y-gK-d3B">
+                            <rect key="frame" x="0.0" y="473" width="375" height="114"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здравоохранение" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l65-Z3-gln">
+                                    <rect key="frame" x="22" y="0.0" width="331" height="25"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Больницы, клиники, поликлиники" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUO-BK-c5j">
+                                    <rect key="frame" x="22" y="29" width="331" height="17"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="14"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXf-ec-b4p">
+                                    <rect key="frame" x="22" y="62" width="102.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="hQy-Yz-1Bc"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Не хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="hQy-Yz-1Bc"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0l2-vu-PzG">
+                                    <rect key="frame" x="252" y="62" width="101" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="THa-Oy-ztq"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="THa-Oy-ztq"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap5-hv-Iom">
+                                    <rect key="frame" x="134.5" y="62" width="107.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="D7z-q0-ABA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Все равно">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="D7z-q0-ABA"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="0l2-vu-PzG" firstAttribute="width" secondItem="X4y-gK-d3B" secondAttribute="width" multiplier="0.27" id="6c8-iT-ISY"/>
+                                <constraint firstAttribute="bottom" secondItem="iXf-ec-b4p" secondAttribute="bottom" id="9Qw-TE-uwp"/>
+                                <constraint firstAttribute="bottom" secondItem="0l2-vu-PzG" secondAttribute="bottom" id="Aiw-FP-ZNl"/>
+                                <constraint firstAttribute="trailing" secondItem="aUO-BK-c5j" secondAttribute="trailing" constant="22" id="C3H-qw-nOL"/>
+                                <constraint firstAttribute="trailing" secondItem="0l2-vu-PzG" secondAttribute="trailing" constant="22" id="GFx-PY-zxB"/>
+                                <constraint firstItem="aUO-BK-c5j" firstAttribute="top" secondItem="l65-Z3-gln" secondAttribute="bottom" constant="4" id="ItX-HZ-SNP"/>
+                                <constraint firstAttribute="trailing" secondItem="l65-Z3-gln" secondAttribute="trailing" constant="22" id="JFI-ef-zHN"/>
+                                <constraint firstItem="aUO-BK-c5j" firstAttribute="leading" secondItem="X4y-gK-d3B" secondAttribute="leading" constant="22" id="KO2-Wr-52P"/>
+                                <constraint firstItem="l65-Z3-gln" firstAttribute="top" secondItem="X4y-gK-d3B" secondAttribute="top" id="Mr6-us-xnM"/>
+                                <constraint firstItem="0l2-vu-PzG" firstAttribute="top" secondItem="aUO-BK-c5j" secondAttribute="bottom" constant="16" id="Px9-Dx-jf0"/>
+                                <constraint firstItem="ap5-hv-Iom" firstAttribute="leading" secondItem="iXf-ec-b4p" secondAttribute="trailing" constant="10" id="Ulu-Q3-VJd"/>
+                                <constraint firstAttribute="bottom" secondItem="ap5-hv-Iom" secondAttribute="bottom" id="Wq1-vb-QWJ"/>
+                                <constraint firstAttribute="height" constant="114" id="Zku-M6-Hsk"/>
+                                <constraint firstItem="ap5-hv-Iom" firstAttribute="top" secondItem="aUO-BK-c5j" secondAttribute="bottom" constant="16" id="bRp-B0-7n3"/>
+                                <constraint firstItem="0l2-vu-PzG" firstAttribute="leading" secondItem="ap5-hv-Iom" secondAttribute="trailing" constant="10" id="gni-fs-ZhO"/>
+                                <constraint firstItem="iXf-ec-b4p" firstAttribute="width" secondItem="X4y-gK-d3B" secondAttribute="width" multiplier="0.27" constant="1" id="hn8-ee-bce"/>
+                                <constraint firstItem="iXf-ec-b4p" firstAttribute="top" secondItem="aUO-BK-c5j" secondAttribute="bottom" constant="16" id="lr7-ME-fDV"/>
+                                <constraint firstItem="iXf-ec-b4p" firstAttribute="leading" secondItem="X4y-gK-d3B" secondAttribute="leading" constant="22" id="nVd-j9-PUu"/>
+                                <constraint firstItem="0l2-vu-PzG" firstAttribute="centerY" secondItem="iXf-ec-b4p" secondAttribute="centerY" id="tBo-gJ-www"/>
+                                <constraint firstItem="l65-Z3-gln" firstAttribute="leading" secondItem="X4y-gK-d3B" secondAttribute="leading" constant="22" id="uy2-tz-3ry"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvV-ky-4mt">
+                            <rect key="frame" x="0.0" y="633" width="375" height="114"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Автомобили" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba4-sU-0eF">
+                                    <rect key="frame" x="22" y="0.0" width="331" height="25"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Парковки, стоянки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHH-vW-ccr">
+                                    <rect key="frame" x="22" y="29" width="331" height="17"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="14"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFX-gY-xiS">
+                                    <rect key="frame" x="22" y="62" width="102.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="Ksk-NC-LCw"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Не хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Ksk-NC-LCw"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJw-PZ-4xC">
+                                    <rect key="frame" x="252" y="62" width="101" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="00q-QM-ms7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="00q-QM-ms7"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VB6-3L-zFV">
+                                    <rect key="frame" x="134.5" y="62" width="107.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="axH-jK-tTv"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Все равно">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="axH-jK-tTv"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="VB6-3L-zFV" firstAttribute="leading" secondItem="KFX-gY-xiS" secondAttribute="trailing" constant="10" id="5hM-uQ-bnb"/>
+                                <constraint firstItem="KFX-gY-xiS" firstAttribute="top" secondItem="BHH-vW-ccr" secondAttribute="bottom" constant="16" id="6Wn-al-6kF"/>
+                                <constraint firstItem="LJw-PZ-4xC" firstAttribute="top" secondItem="BHH-vW-ccr" secondAttribute="bottom" constant="16" id="8jh-3T-EKT"/>
+                                <constraint firstAttribute="bottom" secondItem="LJw-PZ-4xC" secondAttribute="bottom" id="DJJ-Cp-mrr"/>
+                                <constraint firstItem="LJw-PZ-4xC" firstAttribute="leading" secondItem="VB6-3L-zFV" secondAttribute="trailing" constant="10" id="FjE-33-IfO"/>
+                                <constraint firstItem="Ba4-sU-0eF" firstAttribute="leading" secondItem="RvV-ky-4mt" secondAttribute="leading" constant="22" id="GQm-DE-lz4"/>
+                                <constraint firstAttribute="bottom" secondItem="VB6-3L-zFV" secondAttribute="bottom" id="Jqi-ZV-5hO"/>
+                                <constraint firstAttribute="trailing" secondItem="LJw-PZ-4xC" secondAttribute="trailing" constant="22" id="KP0-2H-RHB"/>
+                                <constraint firstItem="BHH-vW-ccr" firstAttribute="leading" secondItem="RvV-ky-4mt" secondAttribute="leading" constant="22" id="UBf-8u-Sqy"/>
+                                <constraint firstItem="KFX-gY-xiS" firstAttribute="width" secondItem="RvV-ky-4mt" secondAttribute="width" multiplier="0.27" constant="1" id="Z5h-yC-8rj"/>
+                                <constraint firstAttribute="height" constant="114" id="ahI-1H-gz5"/>
+                                <constraint firstAttribute="trailing" secondItem="Ba4-sU-0eF" secondAttribute="trailing" constant="22" id="aom-5a-KG8"/>
+                                <constraint firstItem="Ba4-sU-0eF" firstAttribute="top" secondItem="RvV-ky-4mt" secondAttribute="top" id="eL4-Sy-xCX"/>
+                                <constraint firstItem="LJw-PZ-4xC" firstAttribute="centerY" secondItem="KFX-gY-xiS" secondAttribute="centerY" id="egQ-Z0-vEP"/>
+                                <constraint firstItem="BHH-vW-ccr" firstAttribute="top" secondItem="Ba4-sU-0eF" secondAttribute="bottom" constant="4" id="g7v-oL-2Xb"/>
+                                <constraint firstAttribute="bottom" secondItem="KFX-gY-xiS" secondAttribute="bottom" id="iBi-Sd-X98"/>
+                                <constraint firstItem="LJw-PZ-4xC" firstAttribute="width" secondItem="RvV-ky-4mt" secondAttribute="width" multiplier="0.27" id="lCj-y6-s1r"/>
+                                <constraint firstAttribute="trailing" secondItem="BHH-vW-ccr" secondAttribute="trailing" constant="22" id="lNV-T1-Zfs"/>
+                                <constraint firstItem="KFX-gY-xiS" firstAttribute="leading" secondItem="RvV-ky-4mt" secondAttribute="leading" constant="22" id="vWI-S3-4R9"/>
+                                <constraint firstItem="VB6-3L-zFV" firstAttribute="top" secondItem="BHH-vW-ccr" secondAttribute="bottom" constant="16" id="xVD-Fp-YAD"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkc-tH-4Vd">
+                            <rect key="frame" x="0.0" y="793" width="375" height="114"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Магазины" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fS0-iI-fMu">
+                                    <rect key="frame" x="22" y="0.0" width="331" height="25"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продукты и прочая хуйня" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guE-8f-76Y">
+                                    <rect key="frame" x="22" y="29" width="331" height="17"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="14"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRK-7D-wao">
+                                    <rect key="frame" x="22" y="62" width="102.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="Euq-qM-duh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Не хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Euq-qM-duh"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZk-1N-dnd">
+                                    <rect key="frame" x="252" y="62" width="101" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="t1Q-Fy-qN5"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="t1Q-Fy-qN5"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtS-5K-fMX">
+                                    <rect key="frame" x="134.5" y="62" width="107.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="85z-AU-4kE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Все равно">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="85z-AU-4kE"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="fS0-iI-fMu" firstAttribute="leading" secondItem="dkc-tH-4Vd" secondAttribute="leading" constant="22" id="206-4V-8Ep"/>
+                                <constraint firstAttribute="bottom" secondItem="lRK-7D-wao" secondAttribute="bottom" id="4df-F0-UtG"/>
+                                <constraint firstItem="wtS-5K-fMX" firstAttribute="leading" secondItem="lRK-7D-wao" secondAttribute="trailing" constant="10" id="79s-xi-jnl"/>
+                                <constraint firstAttribute="trailing" secondItem="MZk-1N-dnd" secondAttribute="trailing" constant="22" id="9BZ-as-yAI"/>
+                                <constraint firstAttribute="bottom" secondItem="MZk-1N-dnd" secondAttribute="bottom" id="9Tl-rJ-i2g"/>
+                                <constraint firstItem="guE-8f-76Y" firstAttribute="leading" secondItem="dkc-tH-4Vd" secondAttribute="leading" constant="22" id="I1s-Ib-eTb"/>
+                                <constraint firstItem="guE-8f-76Y" firstAttribute="top" secondItem="fS0-iI-fMu" secondAttribute="bottom" constant="4" id="I7n-rZ-X00"/>
+                                <constraint firstItem="lRK-7D-wao" firstAttribute="top" secondItem="guE-8f-76Y" secondAttribute="bottom" constant="16" id="K0e-5y-kr9"/>
+                                <constraint firstItem="MZk-1N-dnd" firstAttribute="width" secondItem="dkc-tH-4Vd" secondAttribute="width" multiplier="0.27" id="Rur-e6-p48"/>
+                                <constraint firstAttribute="trailing" secondItem="fS0-iI-fMu" secondAttribute="trailing" constant="22" id="Uyv-zh-rh2"/>
+                                <constraint firstItem="MZk-1N-dnd" firstAttribute="centerY" secondItem="lRK-7D-wao" secondAttribute="centerY" id="Yw1-nk-Y8L"/>
+                                <constraint firstItem="MZk-1N-dnd" firstAttribute="leading" secondItem="wtS-5K-fMX" secondAttribute="trailing" constant="10" id="a7J-BM-voQ"/>
+                                <constraint firstItem="fS0-iI-fMu" firstAttribute="top" secondItem="dkc-tH-4Vd" secondAttribute="top" id="cdt-QD-n6Y"/>
+                                <constraint firstItem="MZk-1N-dnd" firstAttribute="top" secondItem="guE-8f-76Y" secondAttribute="bottom" constant="16" id="deo-f4-44Q"/>
+                                <constraint firstAttribute="trailing" secondItem="guE-8f-76Y" secondAttribute="trailing" constant="22" id="dme-VE-KOk"/>
+                                <constraint firstItem="lRK-7D-wao" firstAttribute="leading" secondItem="dkc-tH-4Vd" secondAttribute="leading" constant="22" id="mR1-mT-ZfL"/>
+                                <constraint firstItem="wtS-5K-fMX" firstAttribute="top" secondItem="guE-8f-76Y" secondAttribute="bottom" constant="16" id="pGo-dg-nOe"/>
+                                <constraint firstAttribute="bottom" secondItem="wtS-5K-fMX" secondAttribute="bottom" id="qIO-pr-tPs"/>
+                                <constraint firstItem="lRK-7D-wao" firstAttribute="width" secondItem="dkc-tH-4Vd" secondAttribute="width" multiplier="0.27" constant="1" id="vbq-01-7Jm"/>
+                                <constraint firstAttribute="height" constant="114" id="wm0-lw-GnD"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6G-52-rNh">
+                            <rect key="frame" x="0.0" y="953" width="375" height="114"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Трафик" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1C-9P-Zbo">
+                                    <rect key="frame" x="22" y="0.0" width="331" height="25"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загруженность дорог" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiI-2k-5Pg">
+                                    <rect key="frame" x="22" y="29" width="331" height="17"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="14"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTn-K1-EEy">
+                                    <rect key="frame" x="22" y="62" width="102.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="39p-uL-51S"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Не хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="39p-uL-51S"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YK8-UH-ivN">
+                                    <rect key="frame" x="252" y="62" width="101" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="ih6-qW-vol"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="ih6-qW-vol"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRj-ad-V1d">
+                                    <rect key="frame" x="134.5" y="62" width="107.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="gHe-mt-VvC"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Все равно">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="gHe-mt-VvC"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="u1C-9P-Zbo" firstAttribute="leading" secondItem="f6G-52-rNh" secondAttribute="leading" constant="22" id="625-fx-wd9"/>
+                                <constraint firstItem="qiI-2k-5Pg" firstAttribute="top" secondItem="u1C-9P-Zbo" secondAttribute="bottom" constant="4" id="9x5-Rt-Nyl"/>
+                                <constraint firstAttribute="bottom" secondItem="eTn-K1-EEy" secondAttribute="bottom" id="Atg-k2-DeR"/>
+                                <constraint firstAttribute="trailing" secondItem="u1C-9P-Zbo" secondAttribute="trailing" constant="22" id="COu-ke-Y7i"/>
+                                <constraint firstItem="u1C-9P-Zbo" firstAttribute="top" secondItem="f6G-52-rNh" secondAttribute="top" id="Clx-JS-PMk"/>
+                                <constraint firstItem="YK8-UH-ivN" firstAttribute="width" secondItem="f6G-52-rNh" secondAttribute="width" multiplier="0.27" id="DcJ-3R-LVw"/>
+                                <constraint firstAttribute="trailing" secondItem="YK8-UH-ivN" secondAttribute="trailing" constant="22" id="HCa-ec-n31"/>
+                                <constraint firstItem="YRj-ad-V1d" firstAttribute="top" secondItem="qiI-2k-5Pg" secondAttribute="bottom" constant="16" id="Khv-qA-ZUI"/>
+                                <constraint firstItem="YK8-UH-ivN" firstAttribute="leading" secondItem="YRj-ad-V1d" secondAttribute="trailing" constant="10" id="NhB-IH-0rb"/>
+                                <constraint firstItem="eTn-K1-EEy" firstAttribute="leading" secondItem="f6G-52-rNh" secondAttribute="leading" constant="22" id="O6h-ah-yDx"/>
+                                <constraint firstItem="YK8-UH-ivN" firstAttribute="top" secondItem="qiI-2k-5Pg" secondAttribute="bottom" constant="16" id="PRE-ey-gqo"/>
+                                <constraint firstItem="qiI-2k-5Pg" firstAttribute="leading" secondItem="f6G-52-rNh" secondAttribute="leading" constant="22" id="RTq-R1-V1j"/>
+                                <constraint firstAttribute="bottom" secondItem="YK8-UH-ivN" secondAttribute="bottom" id="XGf-Iq-AsZ"/>
+                                <constraint firstItem="YK8-UH-ivN" firstAttribute="centerY" secondItem="eTn-K1-EEy" secondAttribute="centerY" id="YN0-Nl-saV"/>
+                                <constraint firstAttribute="bottom" secondItem="YRj-ad-V1d" secondAttribute="bottom" id="c9p-Hi-I5P"/>
+                                <constraint firstItem="eTn-K1-EEy" firstAttribute="width" secondItem="f6G-52-rNh" secondAttribute="width" multiplier="0.27" constant="1" id="cFI-JK-KO5"/>
+                                <constraint firstAttribute="height" constant="114" id="eRU-XS-DGN"/>
+                                <constraint firstItem="YRj-ad-V1d" firstAttribute="leading" secondItem="eTn-K1-EEy" secondAttribute="trailing" constant="10" id="gmY-jT-Ttf"/>
+                                <constraint firstAttribute="trailing" secondItem="qiI-2k-5Pg" secondAttribute="trailing" constant="22" id="mKY-d1-Zsz"/>
+                                <constraint firstItem="eTn-K1-EEy" firstAttribute="top" secondItem="qiI-2k-5Pg" secondAttribute="bottom" constant="16" id="vbs-6U-RxA"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mA7-Ff-JMx">
+                            <rect key="frame" x="0.0" y="1113" width="375" height="114"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Общественный транспорт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2R-hA-bpD">
+                                    <rect key="frame" x="22" y="0.0" width="331" height="25"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Остановки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUw-9p-FDP">
+                                    <rect key="frame" x="22" y="29" width="331" height="17"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="14"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1a-US-mhb">
+                                    <rect key="frame" x="22" y="62" width="102.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="uRW-Fg-2qT"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Не хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="uRW-Fg-2qT"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT3-1O-K8d">
+                                    <rect key="frame" x="252" y="62" width="101" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="yyU-wu-Nzm"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="yyU-wu-Nzm"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wT5-QN-aDt">
+                                    <rect key="frame" x="134.5" y="62" width="107.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="I60-SL-apI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Все равно">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="I60-SL-apI"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="E2R-hA-bpD" firstAttribute="leading" secondItem="mA7-Ff-JMx" secondAttribute="leading" constant="22" id="1UV-Vd-RpK"/>
+                                <constraint firstItem="h1a-US-mhb" firstAttribute="top" secondItem="lUw-9p-FDP" secondAttribute="bottom" constant="16" id="4ZC-g7-LYe"/>
+                                <constraint firstItem="wT5-QN-aDt" firstAttribute="top" secondItem="lUw-9p-FDP" secondAttribute="bottom" constant="16" id="7Wz-mu-TAv"/>
+                                <constraint firstItem="wT5-QN-aDt" firstAttribute="leading" secondItem="h1a-US-mhb" secondAttribute="trailing" constant="10" id="Ibu-8y-B18"/>
+                                <constraint firstItem="eT3-1O-K8d" firstAttribute="centerY" secondItem="h1a-US-mhb" secondAttribute="centerY" id="KPa-j3-Pjf"/>
+                                <constraint firstAttribute="bottom" secondItem="eT3-1O-K8d" secondAttribute="bottom" id="Kkb-La-5Yx"/>
+                                <constraint firstAttribute="trailing" secondItem="E2R-hA-bpD" secondAttribute="trailing" constant="22" id="Lqm-Vh-skw"/>
+                                <constraint firstItem="eT3-1O-K8d" firstAttribute="width" secondItem="mA7-Ff-JMx" secondAttribute="width" multiplier="0.27" id="Qzq-gA-nKi"/>
+                                <constraint firstItem="E2R-hA-bpD" firstAttribute="top" secondItem="mA7-Ff-JMx" secondAttribute="top" id="WOL-0p-ddj"/>
+                                <constraint firstItem="lUw-9p-FDP" firstAttribute="top" secondItem="E2R-hA-bpD" secondAttribute="bottom" constant="4" id="WtG-1p-lHL"/>
+                                <constraint firstItem="h1a-US-mhb" firstAttribute="leading" secondItem="mA7-Ff-JMx" secondAttribute="leading" constant="22" id="ZNq-o2-ojG"/>
+                                <constraint firstAttribute="trailing" secondItem="lUw-9p-FDP" secondAttribute="trailing" constant="22" id="euL-Yn-M2c"/>
+                                <constraint firstAttribute="trailing" secondItem="eT3-1O-K8d" secondAttribute="trailing" constant="22" id="jSs-8K-S13"/>
+                                <constraint firstAttribute="height" constant="114" id="lId-VV-UXy"/>
+                                <constraint firstItem="lUw-9p-FDP" firstAttribute="leading" secondItem="mA7-Ff-JMx" secondAttribute="leading" constant="22" id="p4e-l3-Z1d"/>
+                                <constraint firstItem="eT3-1O-K8d" firstAttribute="leading" secondItem="wT5-QN-aDt" secondAttribute="trailing" constant="10" id="qHC-N2-Na2"/>
+                                <constraint firstItem="eT3-1O-K8d" firstAttribute="top" secondItem="lUw-9p-FDP" secondAttribute="bottom" constant="16" id="sKh-h4-RLA"/>
+                                <constraint firstAttribute="bottom" secondItem="wT5-QN-aDt" secondAttribute="bottom" id="xBT-ph-sEg"/>
+                                <constraint firstAttribute="bottom" secondItem="h1a-US-mhb" secondAttribute="bottom" id="xmQ-Bk-eXw"/>
+                                <constraint firstItem="h1a-US-mhb" firstAttribute="width" secondItem="mA7-Ff-JMx" secondAttribute="width" multiplier="0.27" constant="1" id="z9L-DY-aal"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gE9-k5-OTy">
+                            <rect key="frame" x="0.0" y="1273" width="375" height="114"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логистика" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfI-yB-Qnq">
+                                    <rect key="frame" x="22" y="0.0" width="331" height="25"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Как добраться с одного района в другой" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ult-cz-Wte">
+                                    <rect key="frame" x="22" y="29" width="331" height="17"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="14"/>
+                                    <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKk-75-gyY">
+                                    <rect key="frame" x="22" y="62" width="102.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="KLD-yh-f2G"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Не хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="KLD-yh-f2G"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwV-xE-YPL">
+                                    <rect key="frame" x="252" y="62" width="101" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="bHz-cp-Meb"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Хочу">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="bHz-cp-Meb"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haK-dU-QHs">
+                                    <rect key="frame" x="134.5" y="62" width="107.5" height="52"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="65j-5f-YIE"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                                    <state key="normal" title="Все равно">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="65j-5f-YIE"/>
+                                        </mask>
+                                    </variation>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="haK-dU-QHs" firstAttribute="top" secondItem="ult-cz-Wte" secondAttribute="bottom" constant="16" id="51C-gm-FgY"/>
+                                <constraint firstItem="qKk-75-gyY" firstAttribute="leading" secondItem="gE9-k5-OTy" secondAttribute="leading" constant="22" id="5EV-ma-DVF"/>
+                                <constraint firstItem="qKk-75-gyY" firstAttribute="top" secondItem="ult-cz-Wte" secondAttribute="bottom" constant="16" id="69z-hu-T60"/>
+                                <constraint firstAttribute="trailing" secondItem="VfI-yB-Qnq" secondAttribute="trailing" constant="22" id="7Gp-Se-r0g"/>
+                                <constraint firstAttribute="trailing" secondItem="ult-cz-Wte" secondAttribute="trailing" constant="22" id="A8n-Q1-b1u"/>
+                                <constraint firstItem="haK-dU-QHs" firstAttribute="leading" secondItem="qKk-75-gyY" secondAttribute="trailing" constant="10" id="CZH-N6-XD8"/>
+                                <constraint firstItem="xwV-xE-YPL" firstAttribute="top" secondItem="ult-cz-Wte" secondAttribute="bottom" constant="16" id="GxO-r3-qL1"/>
+                                <constraint firstItem="ult-cz-Wte" firstAttribute="top" secondItem="VfI-yB-Qnq" secondAttribute="bottom" constant="4" id="HUD-59-kCR"/>
+                                <constraint firstAttribute="bottom" secondItem="xwV-xE-YPL" secondAttribute="bottom" id="Hiv-CU-Cbw"/>
+                                <constraint firstItem="xwV-xE-YPL" firstAttribute="centerY" secondItem="qKk-75-gyY" secondAttribute="centerY" id="Ji5-xp-Krj"/>
+                                <constraint firstItem="ult-cz-Wte" firstAttribute="leading" secondItem="gE9-k5-OTy" secondAttribute="leading" constant="22" id="MHB-Po-5Vj"/>
+                                <constraint firstAttribute="bottom" secondItem="qKk-75-gyY" secondAttribute="bottom" id="aIg-o4-YPw"/>
+                                <constraint firstItem="xwV-xE-YPL" firstAttribute="width" secondItem="gE9-k5-OTy" secondAttribute="width" multiplier="0.27" id="jvf-oN-rc9"/>
+                                <constraint firstAttribute="height" constant="114" id="kCS-fM-09T"/>
+                                <constraint firstItem="xwV-xE-YPL" firstAttribute="leading" secondItem="haK-dU-QHs" secondAttribute="trailing" constant="10" id="kZs-W2-xvH"/>
+                                <constraint firstItem="VfI-yB-Qnq" firstAttribute="leading" secondItem="gE9-k5-OTy" secondAttribute="leading" constant="22" id="oDi-o2-xLX"/>
+                                <constraint firstItem="VfI-yB-Qnq" firstAttribute="top" secondItem="gE9-k5-OTy" secondAttribute="top" id="qCe-L3-EnB"/>
+                                <constraint firstAttribute="trailing" secondItem="xwV-xE-YPL" secondAttribute="trailing" constant="22" id="tEm-Ab-fdW"/>
+                                <constraint firstItem="qKk-75-gyY" firstAttribute="width" secondItem="gE9-k5-OTy" secondAttribute="width" multiplier="0.27" constant="1" id="vy5-PD-wgE"/>
+                                <constraint firstAttribute="bottom" secondItem="haK-dU-QHs" secondAttribute="bottom" id="xeI-Fq-jAJ"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5D-TJ-b7s">
+                            <rect key="frame" x="22" y="1443" width="331" height="81"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="81" id="y1h-rZ-x2K"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="-15" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="ПРОДОЛЖИТЬ" backgroundImage="buttonBack">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="XhP-GK-uZ2"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gE9-k5-OTy" firstAttribute="leading" secondItem="ui4-p1-Tod" secondAttribute="leading" id="2XH-HG-MCH"/>
+                        <constraint firstItem="thL-ho-kK5" firstAttribute="top" secondItem="Xp8-FA-Wwx" secondAttribute="bottom" constant="46" id="39h-B8-x3j"/>
+                        <constraint firstItem="mA7-Ff-JMx" firstAttribute="top" secondItem="f6G-52-rNh" secondAttribute="bottom" constant="46" id="3j6-Zq-bNO"/>
+                        <constraint firstItem="dkc-tH-4Vd" firstAttribute="leading" secondItem="ui4-p1-Tod" secondAttribute="leading" id="3rC-R7-nha"/>
+                        <constraint firstItem="R5D-TJ-b7s" firstAttribute="top" secondItem="gE9-k5-OTy" secondAttribute="bottom" constant="56" id="6ds-rI-aZ9"/>
+                        <constraint firstItem="mA7-Ff-JMx" firstAttribute="leading" secondItem="ui4-p1-Tod" secondAttribute="leading" id="9rW-D5-VP9"/>
+                        <constraint firstItem="RvV-ky-4mt" firstAttribute="top" secondItem="X4y-gK-d3B" secondAttribute="bottom" constant="46" id="C6P-Jn-YNP"/>
+                        <constraint firstAttribute="trailing" secondItem="gE9-k5-OTy" secondAttribute="trailing" id="Ecn-db-MoK"/>
+                        <constraint firstAttribute="trailing" secondItem="X4y-gK-d3B" secondAttribute="trailing" id="JDh-X1-Fod"/>
+                        <constraint firstItem="Xp8-FA-Wwx" firstAttribute="leading" secondItem="ui4-p1-Tod" secondAttribute="leading" id="JTH-aS-DRH"/>
+                        <constraint firstItem="t00-fO-6rQ" firstAttribute="leading" secondItem="ui4-p1-Tod" secondAttribute="leading" constant="34" id="Jk1-hm-PeS"/>
+                        <constraint firstItem="X4y-gK-d3B" firstAttribute="leading" secondItem="ui4-p1-Tod" secondAttribute="leading" id="KIE-0p-vVh"/>
+                        <constraint firstAttribute="trailing" secondItem="dkc-tH-4Vd" secondAttribute="trailing" id="L2h-y8-RSp"/>
+                        <constraint firstItem="f6G-52-rNh" firstAttribute="top" secondItem="dkc-tH-4Vd" secondAttribute="bottom" constant="46" id="Ls6-wu-Ono"/>
+                        <constraint firstAttribute="trailing" secondItem="R5D-TJ-b7s" secondAttribute="trailing" constant="22" id="OaI-lO-ahN"/>
+                        <constraint firstItem="dkc-tH-4Vd" firstAttribute="top" secondItem="RvV-ky-4mt" secondAttribute="bottom" constant="46" id="QNY-nJ-xN9"/>
+                        <constraint firstAttribute="trailing" secondItem="t00-fO-6rQ" secondAttribute="trailing" constant="35" id="T4O-Fl-Xmf"/>
+                        <constraint firstItem="t00-fO-6rQ" firstAttribute="top" secondItem="ui4-p1-Tod" secondAttribute="top" constant="7" id="Tlk-RO-MIH"/>
+                        <constraint firstAttribute="trailing" secondItem="mA7-Ff-JMx" secondAttribute="trailing" id="ZyY-Ra-Tb1"/>
+                        <constraint firstAttribute="trailing" secondItem="f6G-52-rNh" secondAttribute="trailing" id="bPZ-xF-q6T"/>
+                        <constraint firstAttribute="trailing" secondItem="Xp8-FA-Wwx" secondAttribute="trailing" id="bx7-13-5Zo"/>
+                        <constraint firstItem="RvV-ky-4mt" firstAttribute="leading" secondItem="ui4-p1-Tod" secondAttribute="leading" id="cTR-Jz-ppz"/>
+                        <constraint firstAttribute="bottom" secondItem="R5D-TJ-b7s" secondAttribute="bottom" id="ce6-T2-xTI"/>
+                        <constraint firstItem="f6G-52-rNh" firstAttribute="leading" secondItem="ui4-p1-Tod" secondAttribute="leading" id="dph-8i-8cf"/>
+                        <constraint firstItem="gE9-k5-OTy" firstAttribute="top" secondItem="mA7-Ff-JMx" secondAttribute="bottom" constant="46" id="e50-Yh-D9G"/>
+                        <constraint firstItem="R5D-TJ-b7s" firstAttribute="leading" secondItem="ui4-p1-Tod" secondAttribute="leading" constant="22" id="fXb-4y-37N"/>
+                        <constraint firstItem="Xp8-FA-Wwx" firstAttribute="centerX" secondItem="ui4-p1-Tod" secondAttribute="centerX" id="g5M-3i-Yrt"/>
+                        <constraint firstAttribute="trailing" secondItem="thL-ho-kK5" secondAttribute="trailing" id="hko-Z4-QlR"/>
+                        <constraint firstAttribute="trailing" secondItem="RvV-ky-4mt" secondAttribute="trailing" id="iug-F6-J97"/>
+                        <constraint firstItem="Xp8-FA-Wwx" firstAttribute="top" secondItem="t00-fO-6rQ" secondAttribute="bottom" constant="44" id="oac-fK-a7b"/>
+                        <constraint firstItem="X4y-gK-d3B" firstAttribute="top" secondItem="thL-ho-kK5" secondAttribute="bottom" constant="46" id="psi-f1-AF9"/>
+                        <constraint firstItem="thL-ho-kK5" firstAttribute="leading" secondItem="ui4-p1-Tod" secondAttribute="leading" id="v3l-Bk-dHJ"/>
+                        <constraint firstAttribute="bottom" secondItem="Xp8-FA-Wwx" secondAttribute="bottom" constant="380" id="vdW-Hs-OuW"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="vdW-Hs-OuW"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ui4-p1-Tod" secondAttribute="trailing" id="2ev-J7-Rqh"/>
+                <constraint firstItem="ui4-p1-Tod" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Iga-xG-gUT"/>
+                <constraint firstAttribute="bottom" secondItem="ui4-p1-Tod" secondAttribute="bottom" id="LzY-3y-dE9"/>
+                <constraint firstItem="ui4-p1-Tod" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XmD-h9-qaq"/>
+                <constraint firstItem="ui4-p1-Tod" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="avx-u5-kqv"/>
+                <constraint firstItem="ui4-p1-Tod" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zmw-OB-eE7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="515.44227886056979"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buttonBack" width="337" height="81"/>
+    </resources>
+</document>

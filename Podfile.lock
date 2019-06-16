@@ -1,0 +1,230 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlamofireNetworkActivityIndicator (2.3.0):
+    - Alamofire (~> 4.7)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - Bond (6.10.4):
+    - Differ (~> 1.3)
+    - ReactiveKit (~> 3.10)
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
+  - CommonCryptoModule (1.0.2)
+  - DeckTransition (2.0.0)
+  - Differ (1.4.1)
+  - Firebase/Core (5.20.1):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.8.0)
+  - Firebase/CoreOnly (5.20.1):
+    - FirebaseCore (= 5.4.1)
+  - Firebase/Messaging (5.20.1):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.5.0)
+  - FirebaseAnalytics (5.8.0):
+    - FirebaseCore (~> 5.4)
+    - FirebaseInstanceID (~> 3.8)
+    - GoogleAppMeasurement (= 5.8.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseAnalyticsInterop (1.2.0)
+  - FirebaseCore (5.4.1):
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.8.1):
+    - FirebaseCore (~> 5.2)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/UserDefaults (~> 5.2)
+  - FirebaseMessaging (3.5.0):
+    - FirebaseAnalyticsInterop (~> 1.1)
+    - FirebaseCore (~> 5.2)
+    - FirebaseInstanceID (~> 3.6)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/Reachability (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+    - Protobuf (~> 3.1)
+  - GoogleAppMeasurement (5.8.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (5.5.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.5.0)
+  - GoogleUtilities/Logger (5.5.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.5.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.5.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.5.0)"
+  - GoogleUtilities/Reachability (5.5.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.5.0):
+    - GoogleUtilities/Logger
+  - iCarousel (1.8.3)
+  - InputMask (4.1.1)
+  - Instructions (1.2.2-workaround)
+  - IQKeyboardManager (6.2.0)
+  - KeychainSwift (13.0.0)
+  - LGAlertView (2.4.0)
+  - LGSideMenuController (2.1.1)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
+  - ObjectMapper (3.4.2)
+  - Protobuf (3.7.0)
+  - RAMAnimatedTabBarController (3.5.0)
+  - ReactiveKit (3.10.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SkeletonView (1.3)
+  - SkyFloatingLabelTextField (3.6.0)
+  - SnapKit (4.2.0)
+  - SVPullToRefresh (0.4.1)
+  - YandexMapKit (3.2.0):
+    - YandexRuntime (~> 3.2)
+  - YandexMapKitSearch (3.2.0):
+    - YandexMapKit (~> 3.2)
+    - YandexRuntime (~> 3.2)
+  - YandexRuntime (3.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireNetworkActivityIndicator (~> 2.0)
+  - AlamofireObjectMapper (~> 5.2.0)
+  - Bond (= 6.10.4)
+  - Charts (~> 3.0)
+  - CommonCryptoModule (~> 1.0.2)
+  - DeckTransition (~> 2.0)
+  - Firebase/Core
+  - Firebase/Messaging
+  - iCarousel
+  - InputMask
+  - Instructions (from `https://github.com/ephread/Instructions.git`, tag `1.2.2-workaround`)
+  - IQKeyboardManager
+  - KeychainSwift
+  - LGAlertView (from `https://github.com/kublaios/LGAlertView.git`, branch `dev-kublaios`)
+  - LGSideMenuController
+  - NVActivityIndicatorView
+  - RAMAnimatedTabBarController
+  - ReactiveKit (= 3.10.0)
+  - SDWebImage (~> 3.8)
+  - SkeletonView
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SnapKit (~> 4.0)
+  - SVPullToRefresh
+  - YandexMapKit (~> 3.1)
+  - YandexMapKitSearch (~> 3.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - AlamofireObjectMapper
+    - Bond
+    - Charts
+    - CommonCryptoModule
+    - DeckTransition
+    - Differ
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - iCarousel
+    - InputMask
+    - IQKeyboardManager
+    - KeychainSwift
+    - LGSideMenuController
+    - nanopb
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - Protobuf
+    - RAMAnimatedTabBarController
+    - ReactiveKit
+    - SDWebImage
+    - SkeletonView
+    - SkyFloatingLabelTextField
+    - SnapKit
+    - SVPullToRefresh
+    - YandexMapKit
+    - YandexMapKitSearch
+    - YandexRuntime
+
+EXTERNAL SOURCES:
+  Instructions:
+    :git: https://github.com/ephread/Instructions.git
+    :tag: 1.2.2-workaround
+  LGAlertView:
+    :branch: dev-kublaios
+    :git: https://github.com/kublaios/LGAlertView.git
+
+CHECKOUT OPTIONS:
+  Instructions:
+    :git: https://github.com/ephread/Instructions.git
+    :tag: 1.2.2-workaround
+  LGAlertView:
+    :commit: 9a8d1012f2b689742bb20a201b737c91f05648ec
+    :git: https://github.com/kublaios/LGAlertView.git
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireNetworkActivityIndicator: 18346ff6d770d9513d0ac6f2d99706f40f93dbaa
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  Bond: 3f696b53004fd363354dc7dc5f1abfa74b754aa4
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  CommonCryptoModule: 63a68b57abed79655b3a01011419bf037a05b0a0
+  DeckTransition: 2300694f94fbeca2c103f365dc9dc09ffae14a4f
+  Differ: ca4350872e32a1aeedf3d9e2d9e47127833bfa9c
+  Firebase: 2f5235e62f141cb86181c3af0dfe4509706351ac
+  FirebaseAnalytics: fd72a26bf8dac84cefba2f0864366f718555a5b0
+  FirebaseAnalyticsInterop: efbe45c8385ec626e29f9525e5ebd38520dfb6c1
+  FirebaseCore: f1a9a8be1aee4bf71a2fc0f4096df6788bdfda61
+  FirebaseInstanceID: a122b0c258720cf250551bb2bedf48c699f80d90
+  FirebaseMessaging: 4235f949ce1c4e827aeb19705ba5c53f9b85aa10
+  GoogleAppMeasurement: 1624046ab1bcc5e170061a56ef5679000b079c8e
+  GoogleUtilities: 6481e6318c5fcabaaa8513ef8120f329055d7c10
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  InputMask: 88c7c1432816333e884e647f8c2d69485ba525d1
+  Instructions: 51bb318cfda94134b3a986c4cf8c4e9df6649464
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
+  LGAlertView: 2f5e83dd5cc2537de57d98727650609e86197d1a
+  LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
+  RAMAnimatedTabBarController: 7e259e89b669c7bc833a6441c7d8fbfd6580f473
+  ReactiveKit: af0d53664c2326a03d2c9f92c92a30bbc7f3a9ee
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SkeletonView: 7694bfa90fae436487534900020ed39b8eabf94c
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  YandexMapKit: 9bf046c69997348f07a37e587880bf18f147b8d3
+  YandexMapKitSearch: 238d2ae2eced2d89327c7aaad48334bd23bdcdd8
+  YandexRuntime: 1b2bf8365e5fec2fc91e9fda449fa7fae54b3d79
+
+PODFILE CHECKSUM: 9a2d4af1e127be2005bcde5a901cd724b5fb4e64
+
+COCOAPODS: 1.7.0.beta.2

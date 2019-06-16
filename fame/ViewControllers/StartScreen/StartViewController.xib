@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="fame" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luking" translatesAutoresizingMaskIntoConstraints="NO" id="ybE-qv-b2A">
+                    <rect key="frame" x="127.5" y="135" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="ZhD-Ly-YPB"/>
+                        <constraint firstAttribute="height" constant="120" id="sjR-Z0-PE3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет, я Лукинг !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIW-vi-paB">
+                    <rect key="frame" x="27.5" y="286" width="320" height="46"/>
+                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="38"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Давай знакомиться…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9x-wA-Y7B">
+                    <rect key="frame" x="109" y="372" width="157" height="19"/>
+                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0J-DZ-jGP">
+                    <rect key="frame" x="22" y="586" width="331" height="81"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="81" id="Wqk-Cj-oTg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="-15" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="ДАВАЙ" backgroundImage="buttonBack">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="agreeAction:" destination="-1" eventType="touchUpInside" id="3GU-ci-bQt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuK-pm-M7Z">
+                    <rect key="frame" x="22" y="518" width="331" height="58"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="zbp-1Z-gnn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy" pointSize="15"/>
+                    <state key="normal" title="ПРОПУСТИТЬ">
+                        <color key="titleColor" red="0.46274509803921571" green="0.30588235294117649" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="skipAction:" destination="-1" eventType="touchUpInside" id="OFw-x9-BSU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wuK-pm-M7Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="1PC-sy-j5W"/>
+                <constraint firstItem="F9x-wA-Y7B" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3tS-0V-yZC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wuK-pm-M7Z" secondAttribute="trailing" constant="22" id="MDe-go-ePw"/>
+                <constraint firstItem="ybE-qv-b2A" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="115" id="PYu-5Z-fGO"/>
+                <constraint firstItem="ybE-qv-b2A" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ZIW-sJ-R6c"/>
+                <constraint firstItem="F9x-wA-Y7B" firstAttribute="top" secondItem="HIW-vi-paB" secondAttribute="bottom" constant="40" id="d2N-2y-Ozr"/>
+                <constraint firstItem="a0J-DZ-jGP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="dZp-zt-ZRf"/>
+                <constraint firstItem="a0J-DZ-jGP" firstAttribute="top" secondItem="wuK-pm-M7Z" secondAttribute="bottom" constant="10" id="gPA-Th-Pbc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a0J-DZ-jGP" secondAttribute="trailing" constant="22" id="lhn-Ap-1NB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="a0J-DZ-jGP" secondAttribute="bottom" id="pmm-bK-NBF"/>
+                <constraint firstItem="HIW-vi-paB" firstAttribute="top" secondItem="ybE-qv-b2A" secondAttribute="bottom" constant="31" id="rUN-Kg-YKi"/>
+                <constraint firstItem="HIW-vi-paB" firstAttribute="centerX" secondItem="ybE-qv-b2A" secondAttribute="centerX" id="t5i-eW-YBF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buttonBack" width="337" height="81"/>
+        <image name="luking" width="120" height="120"/>
+    </resources>
+</document>
